@@ -57,10 +57,15 @@ void initRooms() {
 
 
     r1->setNorth(r2);
+    r2->setSouth(r1);
     r1->setSouth(r5);
+    r5->setNorth(r1);
     r1->setWest(r4);
+    r4->setEast(r1);
     r1->setEast(r6);
+    r6->setWest(r1);
     r6->setEast(r7);
+    r7->setWest(r6);
 
 }
 

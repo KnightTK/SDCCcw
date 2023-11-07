@@ -67,7 +67,6 @@ Room* Room::getNorth() const {
  */
 void Room::setNorth(Room* _north) {
     this->north = _north;
-    _north->south = this;
 }
 
 
@@ -104,15 +103,12 @@ Room* Room::getDirection(int direction) const {
 
 void Room::setSouth(Room *_south) {
     this->south = _south;
-    _south->north = this;
 }
 void Room::setWest(Room *_west) {
     this->west = _west;
-    _west->east = this;
 }
 void Room::setEast(Room *_east) {
     this->east = _east;
-    _east->west = this;
 }
 
 
