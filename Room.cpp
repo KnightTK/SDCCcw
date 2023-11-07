@@ -30,6 +30,10 @@ void Room::describe() const {
     wrapEndPara();
     wrapOut(this->description);
     wrapEndPara();
+    for (auto iter: this->gameObjects) {
+        wrapOut(iter->shortName);
+        wrapEndPara();
+    }
 }
 
 /**

@@ -7,6 +7,7 @@
 #include <string>
 #include <forward_list>
 #include <list>
+#include "GameObject.h"
 
 using std::string;
 
@@ -30,6 +31,7 @@ class Room {
     Room* south;
     Room* west;
     Room* east;
+    std::list<GameObject*> gameObjects;
 public:
     /**
      * Constructs a new Room.
@@ -53,6 +55,7 @@ public:
      * List storing all rooms that have been registered via addRoom().
      */
     static std::list<Room*> rooms;
+
 
     /**
      * Creates a new Room with the given parameters and register it with the static list.

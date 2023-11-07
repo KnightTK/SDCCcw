@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
@@ -105,7 +105,9 @@
 				2,
 				3,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -153,6 +155,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "strings.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "GameObject.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "FoodObject.h",
 			"sourceGroupIndex" : 1
 		}
 	],

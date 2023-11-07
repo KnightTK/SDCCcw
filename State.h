@@ -8,12 +8,13 @@
 
 class State {
     Room *currentRoom;
+    std::list<GameObject*> inventory;
+    int strength = 100;
 public:
     explicit State(Room *startRoom);
     void goTo(Room *target);
     void announceLoc() const;
     Room* getCurrentRoom() const;
-    void gotoNorth();
 };
 
 
