@@ -128,6 +128,54 @@ textadv/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/build
 .PHONY : textadv/fast
 
+FoodObject.obj: FoodObject.cpp.obj
+.PHONY : FoodObject.obj
+
+# target to build an object file
+FoodObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.obj
+.PHONY : FoodObject.cpp.obj
+
+FoodObject.i: FoodObject.cpp.i
+.PHONY : FoodObject.i
+
+# target to preprocess a source file
+FoodObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.i
+.PHONY : FoodObject.cpp.i
+
+FoodObject.s: FoodObject.cpp.s
+.PHONY : FoodObject.s
+
+# target to generate assembly for a file
+FoodObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.s
+.PHONY : FoodObject.cpp.s
+
+GameObject.obj: GameObject.cpp.obj
+.PHONY : GameObject.obj
+
+# target to build an object file
+GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.obj
+.PHONY : GameObject.cpp.obj
+
+GameObject.i: GameObject.cpp.i
+.PHONY : GameObject.i
+
+# target to preprocess a source file
+GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
+
+GameObject.s: GameObject.cpp.s
+.PHONY : GameObject.s
+
+# target to generate assembly for a file
+GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
+
 Room.obj: Room.cpp.obj
 .PHONY : Room.obj
 
@@ -233,6 +281,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... textadv
+	@echo ... FoodObject.obj
+	@echo ... FoodObject.i
+	@echo ... FoodObject.s
+	@echo ... GameObject.obj
+	@echo ... GameObject.i
+	@echo ... GameObject.s
 	@echo ... Room.obj
 	@echo ... Room.i
 	@echo ... Room.s

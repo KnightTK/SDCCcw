@@ -2,6 +2,9 @@
 
 #include "State.h"
 
+std::list<GameObject*> State::inventory;
+int State::strength = 80;
+
 /**
  * Current state of the game.
  */
@@ -34,4 +37,12 @@ void State::goTo(Room *target) {
  */
 Room* State::getCurrentRoom() const {
     return this->currentRoom;
+}
+
+std::list<GameObject*> State::getInventory() {
+    return  State::inventory;
+}
+
+void State::addObject(GameObject *object) {
+    State::inventory.push_back(object);
 }

@@ -57,6 +57,11 @@ void Room::addRoom(Room* room) {
     Room::rooms.push_back(room);
 }
 
+
+void Room::addObject(GameObject *object) {
+    Room::gameObjects.push_back(object);
+}
+
 /**
  * Gets the north exit of a room.
  * @return The room that is north of this one, or NULL if there is no exit.

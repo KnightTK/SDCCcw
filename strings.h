@@ -19,6 +19,20 @@ const std::string r6desc = "You are in the room 6. There's a passage to the west
 const std::string r7name = "Room 7";
 const std::string r7desc = "You are in the room 7. There's a passage to the west.";
 
+const std::string o1name = "Object1";
+const std::string o1desc = "This is a description of object 1";
+const std::string o1key = "o1";
+const std::string o2name = "Object2";
+const std::string o2desc = "This is a description of object 2";
+const std::string o2key = "o2";
+const std::string o3name = "Object3";
+const std::string o3desc = "This is a description of object 3";
+const std::string o3key = "o3";
+
+const std::string food1name = "food1";
+const std::string food1desc = "This is a description of food1";
+const std::string food1key = "f1";
+
 const std::string badExit = "You can't go that way.";
 const std::string badCommand = "I don't understand that.";
 

@@ -1,7 +1,7 @@
-CMakeFiles/textadv.dir/State.cpp.obj: \
- D:\CLion\CLion_Repository\test4\State.cpp \
- D:\CLion\CLion_Repository\test4\State.h \
- D:\CLion\CLion_Repository\test4\Room.h \
+CMakeFiles/textadv.dir/FoodObject.cpp.obj: \
+ D:\CLion\CLion_Repository\test4\FoodObject.cpp \
+ D:\CLion\CLion_Repository\test4\FoodObject.h \
+ D:\CLion\CLion_Repository\test4\GameObject.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -96,4 +96,5 @@ CMakeFiles/textadv.dir/State.cpp.obj: \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
- D:\CLion\CLion_Repository\test4\GameObject.h
+ D:\CLion\CLion_Repository\test4\State.h \
+ D:\CLion\CLion_Repository\test4\Room.h

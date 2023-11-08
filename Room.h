@@ -31,8 +31,9 @@ class Room {
     Room* south;
     Room* west;
     Room* east;
-    std::list<GameObject*> gameObjects;
+
 public:
+    std::list<GameObject*> gameObjects;
     /**
      * Constructs a new Room.
      * @param _name Name of the room.
@@ -64,6 +65,8 @@ public:
      */
     static Room* addRoom(const string* _name, const string* _desc);
     static void addRoom(Room* room);
+
+    void addObject(GameObject* object);
 
 
     Room* getNorth() const;

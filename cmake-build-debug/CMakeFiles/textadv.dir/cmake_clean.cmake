@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/textadv.dir/FoodObject.cpp.obj"
+  "CMakeFiles/textadv.dir/FoodObject.cpp.obj.d"
+  "CMakeFiles/textadv.dir/GameObject.cpp.obj"
+  "CMakeFiles/textadv.dir/GameObject.cpp.obj.d"
   "CMakeFiles/textadv.dir/Room.cpp.obj"
   "CMakeFiles/textadv.dir/Room.cpp.obj.d"
   "CMakeFiles/textadv.dir/State.cpp.obj"

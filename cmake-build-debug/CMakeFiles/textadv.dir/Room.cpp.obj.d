@@ -95,4 +95,5 @@ CMakeFiles/textadv.dir/Room.cpp.obj: \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
+ D:\CLion\CLion_Repository\test4\GameObject.h \
  D:\CLion\CLion_Repository\test4\wordwrap.h

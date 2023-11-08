@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CLion/CLion_Repository/test4/FoodObject.cpp">
+			<Option target="textadv"/>
+		</Unit>
 		<Unit filename="D:/CLion/CLion_Repository/test4/FoodObject.h">
+			<Option target="textadv"/>
+		</Unit>
+		<Unit filename="D:/CLion/CLion_Repository/test4/GameObject.cpp">
 			<Option target="textadv"/>
 		</Unit>
 		<Unit filename="D:/CLion/CLion_Repository/test4/GameObject.h">
