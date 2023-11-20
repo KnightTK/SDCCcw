@@ -322,10 +322,10 @@ void gameLoop() {
 
 
 int main() {
-    initWordWrap();
-    initRooms();
-    initState();
-    currentState->announceLoc();
-    gameLoop();
-    return 0;
+//    initWordWrap();
+//    initRooms();
+//    initState();
+//    currentState->announceLoc();
+//    gameLoop();
+//    return 0;
 }
