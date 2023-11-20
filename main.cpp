@@ -178,8 +178,8 @@ void gameLoop() {
 
                     for (auto item_room : currentState->getCurrentRoom()->gameObjects){
                         if (commandBuffer.compare(0, endOfVerb, *item_room->key) == 0){
-                            currentState->addObject(iter);
-                            currentState->getCurrentRoom()->gameObjects.remove(iter);
+                            State::addObject(item_room);
+                            currentState->getCurrentRoom()->gameObjects.remove(item_room);
                             std::cout<<"The object was successfully transferred to the inventory"<<std::endl;
                             goto FLAG;
                         }
