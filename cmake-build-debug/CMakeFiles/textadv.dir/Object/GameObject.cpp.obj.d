@@ -1,5 +1,5 @@
-CMakeFiles/textadv.dir/main.cpp.obj: \
- D:\CLion\CLion_Repository\test4\main.cpp \
+CMakeFiles/textadv.dir/Object/GameObject.cpp.obj: \
+ D:\CLion\CLion_Repository\test4\Object\GameObject.cpp \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -133,59 +133,14 @@ CMakeFiles/textadv.dir/main.cpp.obj: \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
- D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ D:\CLion\CLion_Repository\test4\Object\GameObject.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/forward_list \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.h \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/forward_list.tcc \
- D:\CLion\CLion_Repository\test4\RoomState/Room.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
- D:/CLion/CLion_Repository/test4/Object/GameObject.h \
  D:/CLion/CLion_Repository/test4/RoomState/Room.h \
- D:\CLion\CLion_Repository\test4\wordwrap.h \
- D:\CLion\CLion_Repository\test4\RoomState/State.h \
- D:\CLion\CLion_Repository\test4\RoomState/Room.h \
- D:/CLion/CLion_Repository/test4/Object/FoodObject.h \
- D:/CLion/CLion_Repository/test4/Object/GameObject.h \
- D:\CLion\CLion_Repository\test4\strings.h \
- D:\CLion\CLion_Repository\test4\Object/FoodObject.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h
+ D:/CLion/CLion_Repository/test4/Object/GameObject.h
