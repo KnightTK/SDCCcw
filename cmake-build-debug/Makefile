@@ -128,101 +128,101 @@ textadv/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/build
 .PHONY : textadv/fast
 
-FoodObject.obj: FoodObject.cpp.obj
-.PHONY : FoodObject.obj
+Object/FoodObject.obj: Object/FoodObject.cpp.obj
+.PHONY : Object/FoodObject.obj
 
 # target to build an object file
-FoodObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.obj
-.PHONY : FoodObject.cpp.obj
+Object/FoodObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj
+.PHONY : Object/FoodObject.cpp.obj
 
-FoodObject.i: FoodObject.cpp.i
-.PHONY : FoodObject.i
+Object/FoodObject.i: Object/FoodObject.cpp.i
+.PHONY : Object/FoodObject.i
 
 # target to preprocess a source file
-FoodObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.i
-.PHONY : FoodObject.cpp.i
+Object/FoodObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/FoodObject.cpp.i
+.PHONY : Object/FoodObject.cpp.i
 
-FoodObject.s: FoodObject.cpp.s
-.PHONY : FoodObject.s
+Object/FoodObject.s: Object/FoodObject.cpp.s
+.PHONY : Object/FoodObject.s
 
 # target to generate assembly for a file
-FoodObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/FoodObject.cpp.s
-.PHONY : FoodObject.cpp.s
+Object/FoodObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/FoodObject.cpp.s
+.PHONY : Object/FoodObject.cpp.s
 
-GameObject.obj: GameObject.cpp.obj
-.PHONY : GameObject.obj
+Object/GameObject.obj: Object/GameObject.cpp.obj
+.PHONY : Object/GameObject.obj
 
 # target to build an object file
-GameObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.obj
-.PHONY : GameObject.cpp.obj
+Object/GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/GameObject.cpp.obj
+.PHONY : Object/GameObject.cpp.obj
 
-GameObject.i: GameObject.cpp.i
-.PHONY : GameObject.i
+Object/GameObject.i: Object/GameObject.cpp.i
+.PHONY : Object/GameObject.i
 
 # target to preprocess a source file
-GameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.i
-.PHONY : GameObject.cpp.i
+Object/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/GameObject.cpp.i
+.PHONY : Object/GameObject.cpp.i
 
-GameObject.s: GameObject.cpp.s
-.PHONY : GameObject.s
+Object/GameObject.s: Object/GameObject.cpp.s
+.PHONY : Object/GameObject.s
 
 # target to generate assembly for a file
-GameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/GameObject.cpp.s
-.PHONY : GameObject.cpp.s
+Object/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Object/GameObject.cpp.s
+.PHONY : Object/GameObject.cpp.s
 
-Room.obj: Room.cpp.obj
-.PHONY : Room.obj
+RoomState/Room.obj: RoomState/Room.cpp.obj
+.PHONY : RoomState/Room.obj
 
 # target to build an object file
-Room.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Room.cpp.obj
-.PHONY : Room.cpp.obj
+RoomState/Room.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/Room.cpp.obj
+.PHONY : RoomState/Room.cpp.obj
 
-Room.i: Room.cpp.i
-.PHONY : Room.i
+RoomState/Room.i: RoomState/Room.cpp.i
+.PHONY : RoomState/Room.i
 
 # target to preprocess a source file
-Room.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Room.cpp.i
-.PHONY : Room.cpp.i
+RoomState/Room.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/Room.cpp.i
+.PHONY : RoomState/Room.cpp.i
 
-Room.s: Room.cpp.s
-.PHONY : Room.s
+RoomState/Room.s: RoomState/Room.cpp.s
+.PHONY : RoomState/Room.s
 
 # target to generate assembly for a file
-Room.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/Room.cpp.s
-.PHONY : Room.cpp.s
+RoomState/Room.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/Room.cpp.s
+.PHONY : RoomState/Room.cpp.s
 
-State.obj: State.cpp.obj
-.PHONY : State.obj
+RoomState/State.obj: RoomState/State.cpp.obj
+.PHONY : RoomState/State.obj
 
 # target to build an object file
-State.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/State.cpp.obj
-.PHONY : State.cpp.obj
+RoomState/State.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/State.cpp.obj
+.PHONY : RoomState/State.cpp.obj
 
-State.i: State.cpp.i
-.PHONY : State.i
+RoomState/State.i: RoomState/State.cpp.i
+.PHONY : RoomState/State.i
 
 # target to preprocess a source file
-State.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/State.cpp.i
-.PHONY : State.cpp.i
+RoomState/State.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/State.cpp.i
+.PHONY : RoomState/State.cpp.i
 
-State.s: State.cpp.s
-.PHONY : State.s
+RoomState/State.s: RoomState/State.cpp.s
+.PHONY : RoomState/State.s
 
 # target to generate assembly for a file
-State.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/State.cpp.s
-.PHONY : State.cpp.s
+RoomState/State.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\textadv.dir\build.make CMakeFiles/textadv.dir/RoomState/State.cpp.s
+.PHONY : RoomState/State.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -281,18 +281,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... textadv
-	@echo ... FoodObject.obj
-	@echo ... FoodObject.i
-	@echo ... FoodObject.s
-	@echo ... GameObject.obj
-	@echo ... GameObject.i
-	@echo ... GameObject.s
-	@echo ... Room.obj
-	@echo ... Room.i
-	@echo ... Room.s
-	@echo ... State.obj
-	@echo ... State.i
-	@echo ... State.s
+	@echo ... Object/FoodObject.obj
+	@echo ... Object/FoodObject.i
+	@echo ... Object/FoodObject.s
+	@echo ... Object/GameObject.obj
+	@echo ... Object/GameObject.i
+	@echo ... Object/GameObject.s
+	@echo ... RoomState/Room.obj
+	@echo ... RoomState/Room.i
+	@echo ... RoomState/Room.s
+	@echo ... RoomState/State.obj
+	@echo ... RoomState/State.i
+	@echo ... RoomState/State.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

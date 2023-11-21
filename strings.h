@@ -32,9 +32,17 @@ const std::string o3key = "o3";
 const std::string food1name = "food1";
 const std::string food1desc = "This is a description of food1";
 const std::string food1key = "f1";
+const std::string food2name = "food2";
+const std::string food2desc = "This is a description of food2";
+const std::string food2key = "f2";
+const std::string food3name = "food3";
+const std::string food3desc = "This is a description of food3";
+const std::string food3key = "f3";
 
 const std::string badExit = "You can't go that way.";
 const std::string badCommand = "I don't understand that.";
+const std::string inOtherRoom = "The object is not in the current room or in inventory, it may be in another room.";
+const std::string noExist = "The object does not exist";
 
 
 #endif //TEXTADV_STRINGS_H

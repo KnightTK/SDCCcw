@@ -82,19 +82,19 @@ CMakeFiles/textadv.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/main.cpp.s"
 	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\main.cpp -o CMakeFiles\textadv.dir\main.cpp.s
 
-CMakeFiles/textadv.dir/Room.cpp.obj: CMakeFiles/textadv.dir/flags.make
-CMakeFiles/textadv.dir/Room.cpp.obj: D:/CLion/CLion_Repository/test4/Room.cpp
-CMakeFiles/textadv.dir/Room.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/textadv.dir/Room.cpp.obj"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/Room.cpp.obj -MF CMakeFiles\textadv.dir\Room.cpp.obj.d -o CMakeFiles\textadv.dir\Room.cpp.obj -c D:\CLion\CLion_Repository\test4\Room.cpp
+CMakeFiles/textadv.dir/RoomState/Room.cpp.obj: CMakeFiles/textadv.dir/flags.make
+CMakeFiles/textadv.dir/RoomState/Room.cpp.obj: D:/CLion/CLion_Repository/test4/RoomState/Room.cpp
+CMakeFiles/textadv.dir/RoomState/Room.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/textadv.dir/RoomState/Room.cpp.obj"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/RoomState/Room.cpp.obj -MF CMakeFiles\textadv.dir\RoomState\Room.cpp.obj.d -o CMakeFiles\textadv.dir\RoomState\Room.cpp.obj -c D:\CLion\CLion_Repository\test4\RoomState\Room.cpp
 
-CMakeFiles/textadv.dir/Room.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/Room.cpp.i"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\Room.cpp > CMakeFiles\textadv.dir\Room.cpp.i
+CMakeFiles/textadv.dir/RoomState/Room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/RoomState/Room.cpp.i"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\RoomState\Room.cpp > CMakeFiles\textadv.dir\RoomState\Room.cpp.i
 
-CMakeFiles/textadv.dir/Room.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/Room.cpp.s"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\Room.cpp -o CMakeFiles\textadv.dir\Room.cpp.s
+CMakeFiles/textadv.dir/RoomState/Room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/RoomState/Room.cpp.s"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\RoomState\Room.cpp -o CMakeFiles\textadv.dir\RoomState\Room.cpp.s
 
 CMakeFiles/textadv.dir/wordwrap.cpp.obj: CMakeFiles/textadv.dir/flags.make
 CMakeFiles/textadv.dir/wordwrap.cpp.obj: D:/CLion/CLion_Repository/test4/wordwrap.cpp
@@ -110,66 +110,66 @@ CMakeFiles/textadv.dir/wordwrap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/wordwrap.cpp.s"
 	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\wordwrap.cpp -o CMakeFiles\textadv.dir\wordwrap.cpp.s
 
-CMakeFiles/textadv.dir/State.cpp.obj: CMakeFiles/textadv.dir/flags.make
-CMakeFiles/textadv.dir/State.cpp.obj: D:/CLion/CLion_Repository/test4/State.cpp
-CMakeFiles/textadv.dir/State.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/textadv.dir/State.cpp.obj"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/State.cpp.obj -MF CMakeFiles\textadv.dir\State.cpp.obj.d -o CMakeFiles\textadv.dir\State.cpp.obj -c D:\CLion\CLion_Repository\test4\State.cpp
+CMakeFiles/textadv.dir/RoomState/State.cpp.obj: CMakeFiles/textadv.dir/flags.make
+CMakeFiles/textadv.dir/RoomState/State.cpp.obj: D:/CLion/CLion_Repository/test4/RoomState/State.cpp
+CMakeFiles/textadv.dir/RoomState/State.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/textadv.dir/RoomState/State.cpp.obj"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/RoomState/State.cpp.obj -MF CMakeFiles\textadv.dir\RoomState\State.cpp.obj.d -o CMakeFiles\textadv.dir\RoomState\State.cpp.obj -c D:\CLion\CLion_Repository\test4\RoomState\State.cpp
 
-CMakeFiles/textadv.dir/State.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/State.cpp.i"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\State.cpp > CMakeFiles\textadv.dir\State.cpp.i
+CMakeFiles/textadv.dir/RoomState/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/RoomState/State.cpp.i"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\RoomState\State.cpp > CMakeFiles\textadv.dir\RoomState\State.cpp.i
 
-CMakeFiles/textadv.dir/State.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/State.cpp.s"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\State.cpp -o CMakeFiles\textadv.dir\State.cpp.s
+CMakeFiles/textadv.dir/RoomState/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/RoomState/State.cpp.s"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\RoomState\State.cpp -o CMakeFiles\textadv.dir\RoomState\State.cpp.s
 
-CMakeFiles/textadv.dir/GameObject.cpp.obj: CMakeFiles/textadv.dir/flags.make
-CMakeFiles/textadv.dir/GameObject.cpp.obj: D:/CLion/CLion_Repository/test4/GameObject.cpp
-CMakeFiles/textadv.dir/GameObject.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/textadv.dir/GameObject.cpp.obj"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/GameObject.cpp.obj -MF CMakeFiles\textadv.dir\GameObject.cpp.obj.d -o CMakeFiles\textadv.dir\GameObject.cpp.obj -c D:\CLion\CLion_Repository\test4\GameObject.cpp
+CMakeFiles/textadv.dir/Object/GameObject.cpp.obj: CMakeFiles/textadv.dir/flags.make
+CMakeFiles/textadv.dir/Object/GameObject.cpp.obj: D:/CLion/CLion_Repository/test4/Object/GameObject.cpp
+CMakeFiles/textadv.dir/Object/GameObject.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/textadv.dir/Object/GameObject.cpp.obj"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/Object/GameObject.cpp.obj -MF CMakeFiles\textadv.dir\Object\GameObject.cpp.obj.d -o CMakeFiles\textadv.dir\Object\GameObject.cpp.obj -c D:\CLion\CLion_Repository\test4\Object\GameObject.cpp
 
-CMakeFiles/textadv.dir/GameObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/GameObject.cpp.i"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\GameObject.cpp > CMakeFiles\textadv.dir\GameObject.cpp.i
+CMakeFiles/textadv.dir/Object/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/Object/GameObject.cpp.i"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\Object\GameObject.cpp > CMakeFiles\textadv.dir\Object\GameObject.cpp.i
 
-CMakeFiles/textadv.dir/GameObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/GameObject.cpp.s"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\GameObject.cpp -o CMakeFiles\textadv.dir\GameObject.cpp.s
+CMakeFiles/textadv.dir/Object/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/Object/GameObject.cpp.s"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\Object\GameObject.cpp -o CMakeFiles\textadv.dir\Object\GameObject.cpp.s
 
-CMakeFiles/textadv.dir/FoodObject.cpp.obj: CMakeFiles/textadv.dir/flags.make
-CMakeFiles/textadv.dir/FoodObject.cpp.obj: D:/CLion/CLion_Repository/test4/FoodObject.cpp
-CMakeFiles/textadv.dir/FoodObject.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/textadv.dir/FoodObject.cpp.obj"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/FoodObject.cpp.obj -MF CMakeFiles\textadv.dir\FoodObject.cpp.obj.d -o CMakeFiles\textadv.dir\FoodObject.cpp.obj -c D:\CLion\CLion_Repository\test4\FoodObject.cpp
+CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj: CMakeFiles/textadv.dir/flags.make
+CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj: D:/CLion/CLion_Repository/test4/Object/FoodObject.cpp
+CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj: CMakeFiles/textadv.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLion\CLion_Repository\test4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj -MF CMakeFiles\textadv.dir\Object\FoodObject.cpp.obj.d -o CMakeFiles\textadv.dir\Object\FoodObject.cpp.obj -c D:\CLion\CLion_Repository\test4\Object\FoodObject.cpp
 
-CMakeFiles/textadv.dir/FoodObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/FoodObject.cpp.i"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\FoodObject.cpp > CMakeFiles\textadv.dir\FoodObject.cpp.i
+CMakeFiles/textadv.dir/Object/FoodObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/textadv.dir/Object/FoodObject.cpp.i"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLion\CLion_Repository\test4\Object\FoodObject.cpp > CMakeFiles\textadv.dir\Object\FoodObject.cpp.i
 
-CMakeFiles/textadv.dir/FoodObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/FoodObject.cpp.s"
-	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\FoodObject.cpp -o CMakeFiles\textadv.dir\FoodObject.cpp.s
+CMakeFiles/textadv.dir/Object/FoodObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/textadv.dir/Object/FoodObject.cpp.s"
+	D:\CLion\CLion_body\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLion\CLion_Repository\test4\Object\FoodObject.cpp -o CMakeFiles\textadv.dir\Object\FoodObject.cpp.s
 
 # Object files for target textadv
 textadv_OBJECTS = \
 "CMakeFiles/textadv.dir/main.cpp.obj" \
-"CMakeFiles/textadv.dir/Room.cpp.obj" \
+"CMakeFiles/textadv.dir/RoomState/Room.cpp.obj" \
 "CMakeFiles/textadv.dir/wordwrap.cpp.obj" \
-"CMakeFiles/textadv.dir/State.cpp.obj" \
-"CMakeFiles/textadv.dir/GameObject.cpp.obj" \
-"CMakeFiles/textadv.dir/FoodObject.cpp.obj"
+"CMakeFiles/textadv.dir/RoomState/State.cpp.obj" \
+"CMakeFiles/textadv.dir/Object/GameObject.cpp.obj" \
+"CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj"
 
 # External object files for target textadv
 textadv_EXTERNAL_OBJECTS =
 
 textadv.exe: CMakeFiles/textadv.dir/main.cpp.obj
-textadv.exe: CMakeFiles/textadv.dir/Room.cpp.obj
+textadv.exe: CMakeFiles/textadv.dir/RoomState/Room.cpp.obj
 textadv.exe: CMakeFiles/textadv.dir/wordwrap.cpp.obj
-textadv.exe: CMakeFiles/textadv.dir/State.cpp.obj
-textadv.exe: CMakeFiles/textadv.dir/GameObject.cpp.obj
-textadv.exe: CMakeFiles/textadv.dir/FoodObject.cpp.obj
+textadv.exe: CMakeFiles/textadv.dir/RoomState/State.cpp.obj
+textadv.exe: CMakeFiles/textadv.dir/Object/GameObject.cpp.obj
+textadv.exe: CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj
 textadv.exe: CMakeFiles/textadv.dir/build.make
 textadv.exe: CMakeFiles/textadv.dir/linkLibs.rsp
 textadv.exe: CMakeFiles/textadv.dir/objects1.rsp

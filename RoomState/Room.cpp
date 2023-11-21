@@ -1,6 +1,6 @@
 
 #include "Room.h"
-#include "wordwrap.h"
+#include "../wordwrap.h"
 
 /**
  * Stores a static list of all rooms.
@@ -31,7 +31,7 @@ void Room::describe() const {
     wrapOut(this->description);
     wrapEndPara();
     for (auto iter: this->gameObjects) {
-        wrapOut(iter->shortName);
+        wrapOut(iter->getShortName());
         wrapEndPara();
     }
 }
@@ -59,7 +59,7 @@ void Room::addRoom(Room* room) {
 
 
 void Room::addObject(GameObject *object) {
-    Room::gameObjects.push_back(object);
+    gameObjects.push_back(object);
 }
 
 /**
@@ -120,4 +120,10 @@ void Room::setEast(Room *_east) {
     this->east = _east;
 }
 
+const std::list<GameObject *> Room::getGameObjects() const {
+    return gameObjects;
+}
 
+void Room::removeObject(GameObject *object) {
+    gameObjects.remove(object);
+}

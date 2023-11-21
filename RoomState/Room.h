@@ -7,14 +7,19 @@
 #include <string>
 #include <forward_list>
 #include <list>
-#include "GameObject.h"
+#include "../Object/GameObject.h"
 
 using std::string;
+
+
+class GameObject;
 
 /**
  * Represents a room (accessible location in the game).
  */
 class Room {
+private:
+    std::list<GameObject*> gameObjects = {};
     /**
      * Short name used as a header.
      */
@@ -33,7 +38,6 @@ class Room {
     Room* east;
 
 public:
-    std::list<GameObject*> gameObjects;
     /**
      * Constructs a new Room.
      * @param _name Name of the room.
@@ -82,6 +86,9 @@ public:
     void setEast(Room* _east);
 
     Room* getDirection(int direction) const;
+
+    const std::list<GameObject *> getGameObjects() const;
+    void removeObject(GameObject* object);
 };
 
 #endif //TEXTADV_ROOM_H

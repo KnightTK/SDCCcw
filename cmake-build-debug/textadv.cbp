@@ -82,28 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/CLion/CLion_Repository/test4/FoodObject.cpp">
+		<Unit filename="D:/CLion/CLion_Repository/test4/Object/FoodObject.cpp">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/FoodObject.h">
+		<Unit filename="D:/CLion/CLion_Repository/test4/Object/FoodObject.h">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/GameObject.cpp">
+		<Unit filename="D:/CLion/CLion_Repository/test4/Object/GameObject.cpp">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/GameObject.h">
+		<Unit filename="D:/CLion/CLion_Repository/test4/Object/GameObject.h">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/Room.cpp">
+		<Unit filename="D:/CLion/CLion_Repository/test4/RoomState/Room.cpp">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/Room.h">
+		<Unit filename="D:/CLion/CLion_Repository/test4/RoomState/Room.h">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/State.cpp">
+		<Unit filename="D:/CLion/CLion_Repository/test4/RoomState/State.cpp">
 			<Option target="textadv"/>
 		</Unit>
-		<Unit filename="D:/CLion/CLion_Repository/test4/State.h">
+		<Unit filename="D:/CLion/CLion_Repository/test4/RoomState/State.h">
 			<Option target="textadv"/>
 		</Unit>
 		<Unit filename="D:/CLion/CLion_Repository/test4/main.cpp">
