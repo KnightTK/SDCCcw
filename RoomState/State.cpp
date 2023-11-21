@@ -19,7 +19,7 @@ void State::announceLoc() const {
  * Constructor.
  * @param startRoom Pointer to the room to start in.
  */
-State::State(Room *startRoom) : currentRoom(startRoom), strength(50){};
+State::State(Room *startRoom) : currentRoom(startRoom), strength(100){};
 
 /**
  * Move to a specified room and print its description.
@@ -77,4 +77,8 @@ void State::eatObject(GameObject *object) {
 
 void State::removeObject(GameObject *object) {
     inventory.remove(object);
+}
+
+void State::setStrength(int _strength) {
+    State::strength = _strength;
 }

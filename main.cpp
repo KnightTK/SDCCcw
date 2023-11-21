@@ -11,6 +11,9 @@
 #include "strings.h"
 #include "Object/FoodObject.h"
 #include <map>
+#include <thread>
+#include <chrono>
+#include <atomic>
 
 
 
@@ -96,11 +99,29 @@ std::map<std::string,int> directionMap = {
 };
 
 
+void strengthCount(){
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::minutes (1));
+        currentState->setStrength(currentState->getStrength() - 1);
+        if (currentState->getStrength() <= 0){
+            break;
+        }
+    }
+    std::cout<<"You don't have enough strength. Game over."<<std::endl;
+    exit(0);
+}
+
+
 
 /**
  * The main game loop.
  */
 void gameLoop() {
+//    std::atomic<int> strength;
+
+    std::thread myThread (strengthCount);
+
+
     bool gameOver = false;
     while (!gameOver) {
         /* Ask for a command. */
@@ -304,8 +325,14 @@ void gameLoop() {
 
 
 
+        if (commandBuffer.compare(0, endOfVerb, "c") == 0){
+            commandOk = true;
+            std::cout<<"current strength: "<<currentState->getStrength()<<std::endl;
+        }
+
+
         /* Quit command */
-        if ((commandBuffer.compare(0, endOfVerb, "quit") == 0)) {
+        if ((commandBuffer.compare(0, endOfVerb, "quit") == 0) || currentState->getStrength()<=0) {
             commandOk = true;
             gameOver = true;
         }

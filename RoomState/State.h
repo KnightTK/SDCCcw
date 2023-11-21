@@ -23,6 +23,7 @@ public:
     std::list<GameObject*> getInventory();
 
     int getStrength() const;
+    void setStrength(int strength);
 
     void addObject(GameObject* object);
     void removeObject(GameObject* object);
