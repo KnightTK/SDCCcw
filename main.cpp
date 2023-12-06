@@ -120,7 +120,7 @@ void gameLoop() {
 //    std::atomic<int> strength;
 
     std::thread myThread (strengthCount);
-
+    myThread.detach();
 
     bool gameOver = false;
     while (!gameOver) {
@@ -343,6 +343,9 @@ void gameLoop() {
             wrapEndPara();
         }
     }
+//    if (gameOver){
+//        myThread.detach();
+//    }
 }
 
 
