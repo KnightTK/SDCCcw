@@ -61,13 +61,14 @@ int State::getStrength() const {
 
 
 void State::eatObject(GameObject *object) {
-    if(((FoodObject*) object)->getEnergy()){
+    if(object->isFood()){
         this->strength += ((FoodObject*) object)->getEnergy();
         if(this->strength > 100){
             this->strength = 100;
         } else if (this->strength < 0){
             this->strength = 0;
         }
+        this->inventory.remove(object);
         std::cout<<"Successfully eating food, your current strength is: "<<this->getStrength()<<std::endl;
     } else {
         std::cout<<"You can't eat this object. Because it is not a food..."<<std::endl;

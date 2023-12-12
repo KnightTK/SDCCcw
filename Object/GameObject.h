@@ -22,7 +22,8 @@ private:
     const string* longDescription;
     const string* key;
 public:
-    virtual void eatObject();
+    virtual bool isFood();
+
     GameObject(const string* _shortName, const string* _longDescription, const string* _key);
 
     static std::list<GameObject*> allObjects;

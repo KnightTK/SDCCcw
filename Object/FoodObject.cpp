@@ -28,3 +28,7 @@ FoodObject* FoodObject::addObject(const std::string *_shortName, const std::stri
     return newFood;
 }
 
+bool FoodObject::isFood() {
+    return true;
+}
+

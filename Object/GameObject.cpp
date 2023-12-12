@@ -24,11 +24,6 @@ GameObject* GameObject::addObject(const string* _shortName, const string* _longD
 
 
 
-void GameObject::eatObject() {
-    std::cout<<"This object is not food and cannot be eaten."<<std::endl;
-}
-
-
 
 
 const string *GameObject::getShortName() const {
@@ -41,6 +36,10 @@ const string *GameObject::getLongDescription() const {
 
 const string *GameObject::getKey() const {
     return key;
+}
+
+bool GameObject::isFood() {
+    return false;
 }
 
 

@@ -61,9 +61,9 @@ void initRooms() {
     auto * o2 = GameObject::addObject(&o2name, &o2desc, &o2key, r1);
     auto * o3 = GameObject::addObject(&o3name, &o3desc, &o3key, r2);
 
-    auto * f1 = FoodObject::addObject(&food1name, &food1desc, &food1key, 2, r1);
-    auto * f2 = FoodObject::addObject(&food2name, &food2desc, &food2key, 400, r1);
-    auto * f3 = FoodObject::addObject(&food3name, &food3desc, &food3key, -10, r2);
+    auto * f1 = FoodObject::addObject(&food1name, &food1desc, &food1key, 7, r1);
+    auto * f2 = FoodObject::addObject(&food2name, &food2desc, &food2key, -18, r1);
+    auto * f3 = FoodObject::addObject(&food3name, &food3desc, &food3key, 400, r2);
 
 }
 
@@ -131,59 +131,84 @@ void gameLoop() {
         /* The first word of a command would normally be the verb. The first word is the text before the first
          * space, or if there is no space, the whole string. */
         auto endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+        auto endOfSecond = static_cast<uint8_t>(commandBuffer.find(' '));
+        bool isSecond = false;
+
+        if (endOfVerb != static_cast<uint8_t>(-1)) {
+            endOfSecond = commandBuffer.find(' ', endOfVerb + 1);
+            isSecond = true;
+        }
 
 
         for (auto iter: directionMap) {
             if (commandBuffer.compare(0, endOfVerb, iter.first) == 0) {
                 commandOk = true;
                 gotoTarget(iter.second);
-                break;
-            }
-        }
+                if (isSecond) {
 
+                    bool isExist = false;
+                    for (auto secondOfObject: GameObject::allObjects) {
+                        if (commandBuffer.compare(endOfVerb + 1, endOfSecond, *secondOfObject->getKey()) == 0) {
+                            isExist = true;
+                            bool searchSuccess = false;
 
+                            for (auto item_room: currentState->getCurrentRoom()->getGameObjects()) {
+                                if (commandBuffer.compare(endOfVerb + 1, endOfSecond, *item_room->getKey()) == 0) {
+                                    std::cout << "Find it in the room!" << std::endl;
+                                    searchSuccess = true;
+                                    break;
+                                }
+                            }
 
-        for (auto iter: GameObject::allObjects) {
-            if (commandBuffer.compare(0, endOfVerb, *iter->getKey()) == 0) {
-                bool searchSuccess = false;
-                commandOk = true;
+                            if (!searchSuccess) {
+                                for (auto item_inventory: currentState->getInventory()) {
+                                    if (commandBuffer.compare(endOfVerb + 1, endOfSecond, *item_inventory->getKey()) == 0) {
+                                        std::cout << "Find it in the inventory!" << std::endl;
+                                        searchSuccess = true;
+                                        break;
+                                    }
+                                }
+                            }
 
-                for (auto item_room: currentState->getCurrentRoom()->getGameObjects()) {
-                    if (commandBuffer.compare(0, endOfVerb, *item_room->getKey()) == 0) {
-                        std::cout << "Find it in the room!" << std::endl;
-                        searchSuccess = true;
-                        break;
-                    }
-                }
-
-                if (!searchSuccess) {
-                    for (auto item_inventory: currentState->getInventory()) {
-                        if (commandBuffer.compare(0, endOfVerb, *item_inventory->getKey()) == 0) {
-                            std::cout << "Find it in the inventory!" << std::endl;
-                            searchSuccess = true;
-                            break;
+                            if (!searchSuccess){
+                                wrapOut(&inOtherRoom);
+                                wrapEndPara();
+                            }
                         }
                     }
-                }
 
-                if (!searchSuccess){
-                    wrapOut(&inOtherRoom);
-                    wrapEndPara();
+                    if (!isExist){
+                        wrapOut(&noExist);
+                        wrapEndPara();
+                    }
+
+                    break;
+
+                } else {
+                    break;
                 }
             }
         }
+
 
 
 
         if (commandBuffer.compare(0, endOfVerb, "get") == 0) {
             commandOk = true;
-            std::cout << "Please enter the key of the object which you want to get -";
-            inputCommand(&commandBuffer);
-            auto endOfVerb_get = static_cast<uint8_t>(commandBuffer.find(' '));
+
+            if (!isSecond) {
+                std::cout << "Please enter the key of the object which you want to get -";
+                inputCommand(&commandBuffer);
+                endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+            } else {
+                commandBuffer.erase(0, endOfVerb + 1);
+                endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+            }
+
 
             bool ifExist = false;
             for (auto iter: GameObject::allObjects) {
-                if (commandBuffer.compare(0, endOfVerb_get, *iter->getKey()) == 0) {
+                if (commandBuffer.compare(0, endOfVerb, *iter->getKey()) == 0) {
                     ifExist = true;
                     bool searchSuccess = false;
 
@@ -216,56 +241,68 @@ void gameLoop() {
             if (!ifExist){
                 wrapOut(&noExist);
                 wrapEndPara();
+                commandBuffer.clear();
             }
         }
 
 
         if (commandBuffer.compare(0, endOfVerb, "drop") == 0) {
             commandOk = true;
-            std::cout << "Please enter the key of the object which you want to drop -";
-            inputCommand(&commandBuffer);
-            auto endOfVerb_drop = static_cast<uint8_t>(commandBuffer.find(' '));
+            if (currentState->getInventory().empty()){
+                std::cout << "Your inventory is empty." << std::endl;
+            } else {
 
-            bool ifExist = false;
-            for (auto iter: GameObject::allObjects) {
-                if (commandBuffer.compare(0, endOfVerb_drop, *iter->getKey()) == 0) {
-                    ifExist = true;
-                    bool searchSuccess = false;
+                if (!isSecond) {
+                    std::cout << "Please enter the key of the object which you want to drop -";
+                    inputCommand(&commandBuffer);
+                    endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+                } else {
+                    commandBuffer.erase(0, endOfVerb + 1);
+                    endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+                }
 
-                    for (auto item_room: currentState->getCurrentRoom()->getGameObjects()) {
-                        if (commandBuffer.compare(0, endOfVerb, *item_room->getKey()) == 0) {
-                            std::cout << "The item is already in the room." << std::endl;
-                            searchSuccess = true;
-                            break;
-                        }
-                    }
+                bool ifExist = false;
+                for (auto iter: GameObject::allObjects) {
+                    if (commandBuffer.compare(0, endOfVerb, *iter->getKey()) == 0) {
+                        ifExist = true;
+                        bool searchSuccess = false;
 
-                    if (!searchSuccess) {
-                        for (auto item_inventory: currentState->getInventory()) {
-                            if (commandBuffer.compare(0, endOfVerb, *item_inventory->getKey()) == 0) {
-                                currentState->getCurrentRoom()->addObject(iter);
-                                currentState->removeObject(iter);
-                                std::cout << "The object is successfully dropped!" << std::endl;
+                        for (auto item_room: currentState->getCurrentRoom()->getGameObjects()) {
+                            if (commandBuffer.compare(0, endOfVerb, *item_room->getKey()) == 0) {
+                                std::cout << "The item is already in the room." << std::endl;
                                 searchSuccess = true;
                                 break;
                             }
                         }
-                    }
 
-                    if (!searchSuccess) {
-                        wrapOut(&inOtherRoom);
-                        wrapEndPara();
+                        if (!searchSuccess) {
+                            for (auto item_inventory: currentState->getInventory()) {
+                                if (commandBuffer.compare(0, endOfVerb, *item_inventory->getKey()) == 0) {
+                                    currentState->getCurrentRoom()->addObject(iter);
+                                    currentState->removeObject(iter);
+                                    std::cout << "The object is successfully dropped!" << std::endl;
+                                    searchSuccess = true;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (!searchSuccess) {
+                            wrapOut(&inOtherRoom);
+                            wrapEndPara();
+                        }
                     }
                 }
-            }
-            if (!ifExist) {
-                wrapOut(&noExist);
-                wrapEndPara();
+                if (!ifExist) {
+                    wrapOut(&noExist);
+                    wrapEndPara();
+                    commandBuffer.clear();
+                }
             }
         }
 
 
-        if (commandBuffer.compare(0, endOfVerb, "inventory") == 0) {
+        if (commandBuffer.compare(0, endOfVerb, "inventory") == 0 && !isSecond) {
             commandOk = true;
             if (currentState->getInventory().empty()) {
                 std::cout << "There is nothing in the inventory..." << std::endl;
@@ -280,55 +317,68 @@ void gameLoop() {
 
         if (commandBuffer.compare(0, endOfVerb, "examine") == 0) {
             commandOk = true;
-            std::cout << "Please enter the name of the object which you want to examine -";
-            inputCommand(&commandBuffer);
-            auto endOfVerb_examine = static_cast<uint8_t>(commandBuffer.find(' '));
+
+            if (!isSecond) {
+                std::cout << "Please enter the name of the object which you want to examine -";
+                inputCommand(&commandBuffer);
+                endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+            } else {
+                commandBuffer.erase(0, endOfVerb + 1);
+                endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+            }
 
             bool ifExist = false;
             for (auto iter: GameObject::allObjects) {
-                if (commandBuffer.compare(0, endOfVerb_examine, *iter->getShortName()) == 0) {
-                    std::cout << *iter->getLongDescription() << std::endl;
+                if (commandBuffer.compare(0, endOfVerb, *iter->getShortName()) == 0) {
                     ifExist = true;
+                    std::cout << *iter->getLongDescription() << std::endl;
                     break;
                 }
             }
             if (!ifExist) {
                 wrapOut(&noExist);
                 wrapEndPara();
+                commandBuffer.clear();
             }
         }
 
 
         if (commandBuffer.compare(0, endOfVerb, "eat") == 0) {
             commandOk = true;
+
             if (currentState->getInventory().empty()) {
                 std::cout << "There is nothing in the inventory..." << std::endl;
             } else {
-                std::cout << "Please enter the key of the object which you want to eat -";
-                inputCommand(&commandBuffer);
-                auto endOfVerb_eat = static_cast<uint8_t>(commandBuffer.find(' '));
+                if (!isSecond) {
+                    std::cout << "Please enter the key of the object which you want to eat -";
+                    inputCommand(&commandBuffer);
+                    endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+                } else {
+                    commandBuffer.erase(0, endOfVerb + 1);
+                    endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+                }
 
                 bool eatSuccess = false;
                 for (auto iter: currentState->getInventory()) {
-                    if (commandBuffer.compare(0, endOfVerb_eat, *iter->getKey()) == 0) {
+                    if (commandBuffer.compare(0, endOfVerb, *iter->getKey()) == 0) {
                         currentState->eatObject(iter);
-                        currentState->removeObject(iter);
                         eatSuccess = true;
                         break;
                     }
                 }
                 if (!eatSuccess){
                     std::cout << "You don't have this food in your inventory..." << std::endl;
+                    commandBuffer.clear();
                 }
             }
         }
 
 
 
-        if (commandBuffer.compare(0, endOfVerb, "c") == 0){
-            commandOk = true;
-            std::cout<<"current strength: "<<currentState->getStrength()<<std::endl;
-        }
+//        if (commandBuffer.compare(0, endOfVerb, "c") == 0){
+//            commandOk = true;
+//            std::cout<<"current strength: "<<currentState->getStrength()<<std::endl;
+//        }
 
 
         /* Quit command */
@@ -343,9 +393,6 @@ void gameLoop() {
             wrapEndPara();
         }
     }
-//    if (gameOver){
-//        myThread.detach();
-//    }
 }
 
 
