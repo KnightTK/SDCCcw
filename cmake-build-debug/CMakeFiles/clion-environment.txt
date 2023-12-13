@@ -1,0 +1,4 @@
+ToolSet: w64 11.0 (local)@D:\CLion\CLion_body\bin\mingw
+Options: 
+
+Options:

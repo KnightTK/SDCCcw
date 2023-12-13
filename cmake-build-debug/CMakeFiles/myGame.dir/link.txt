@@ -1,0 +1,3 @@
+D:\CLion\CLion_body\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\myGame.dir/objects.a
+D:\CLion\CLion_body\bin\mingw\bin\ar.exe qc CMakeFiles\myGame.dir/objects.a @CMakeFiles\myGame.dir\objects1.rsp
+D:\CLion\CLion_body\bin\mingw\bin\g++.exe -static-libstdc++ -static-libgcc -g -static -shared -o libmyGame.dll -Wl,--out-implib,libmyGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\myGame.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\myGame.dir\linkLibs.rsp

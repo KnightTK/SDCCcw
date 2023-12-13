@@ -1,0 +1,3 @@
+D:\CLion\CLion_body\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Ryne.dir/objects.a
+D:\CLion\CLion_body\bin\mingw\bin\ar.exe qc CMakeFiles\Ryne.dir/objects.a @CMakeFiles\Ryne.dir\objects1.rsp
+D:\CLion\CLion_body\bin\mingw\bin\g++.exe -static-libstdc++ -static-libgcc -g -Wl,--whole-archive CMakeFiles\Ryne.dir/objects.a -Wl,--no-whole-archive -o Ryne.exe -Wl,--out-implib,libRyne.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Ryne.dir\linkLibs.rsp
