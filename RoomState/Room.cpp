@@ -127,3 +127,7 @@ const std::list<GameObject *> Room::getGameObjects() const {
 void Room::removeObject(GameObject *object) {
     gameObjects.remove(object);
 }
+
+const string *Room::getName() const {
+    return name;
+}

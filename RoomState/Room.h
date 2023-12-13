@@ -89,6 +89,8 @@ public:
 
     const std::list<GameObject *> getGameObjects() const;
     void removeObject(GameObject* object);
+
+    const string *getName() const;
 };
 
 #endif //TEXTADV_ROOM_H
