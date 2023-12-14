@@ -12,8 +12,8 @@ std::list<Room*> Room::rooms;
  * @param _name Room's name.
  * @param _desc Room's description.
  */
-Room::Room(const string* _name, const string *_desc) :
-        name(_name), description(_desc), north(nullptr), south(nullptr), west(nullptr), east(nullptr) {};
+Room::Room(const string* _name, const string *_desc, int _index) :
+        name(_name), description(_desc), index(_index), north(nullptr), south(nullptr), west(nullptr), east(nullptr) {};
 
 /**
  * Remove destroyed rooms from the static list.
@@ -42,8 +42,8 @@ void Room::describe() const {
  * @param _desc Description for the new room.
  * @return A pointer to the newly created room.
  */
-Room* Room::addRoom(const string* _name, const string *_desc) {
-    auto *newRoom = new Room(_name, _desc);
+Room* Room::addRoom(const string* _name, const string *_desc, int _index) {
+    auto *newRoom = new Room(_name, _desc, _index);
     Room::rooms.push_back(newRoom);
     return newRoom;
 }
@@ -130,4 +130,12 @@ void Room::removeObject(GameObject *object) {
 
 const string *Room::getName() const {
     return name;
+}
+
+int Room::getIndex() {
+    return index;
+}
+
+void Room::clearObject() {
+    this->gameObjects.clear();
 }

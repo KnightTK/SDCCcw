@@ -146,4 +146,11 @@ CMakeFiles/textadv.dir/RoomState/State.cpp.obj: \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h

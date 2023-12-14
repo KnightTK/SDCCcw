@@ -1,0 +1,18 @@
+action:
+0 -> currentRoom;
+1 -> strength; num->
+2 -> get; (inventory)
+3 -> drop; (room)
+4 -> eat; (remove)
+
+object:
+0:
+    124567
+1:
+    num
+2:
+    123456
+3:
+    123456
+4:
+    456

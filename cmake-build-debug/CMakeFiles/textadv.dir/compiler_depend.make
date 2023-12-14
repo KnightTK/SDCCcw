@@ -149,7 +149,12 @@ CMakeFiles/textadv.dir/Object/FoodObject.cpp.obj: D:/CLion/CLion_Repository/test
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
-  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc
 
 CMakeFiles/textadv.dir/Object/GameObject.cpp.obj: D:/CLion/CLion_Repository/test4/Object/GameObject.cpp \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
@@ -544,7 +549,14 @@ CMakeFiles/textadv.dir/RoomState/State.cpp.obj: D:/CLion/CLion_Repository/test4/
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
-  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
+  D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h
 
 CMakeFiles/textadv.dir/main.cpp.obj: D:/CLion/CLion_Repository/test4/main.cpp \
   D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
@@ -1586,6 +1598,22 @@ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_
 
 D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc:
 
+D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/rpc.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vnnivlintrin.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vpopcntdqintrin.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
+
 D:/CLion/CLion_Repository/test4/Object/GameObject.cpp:
 
 D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/processthreadsapi.h:
@@ -1601,6 +1629,12 @@ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512fi
 D:/CLion/CLion_Repository/test4/wordwrap.h:
 
 D:/CLion/CLion_Repository/test4/RoomState/State.cpp:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility:
+
+D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/_bsd_types.h:
+
+D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h:
 
 D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:
 
@@ -1657,22 +1691,6 @@ D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512if
 D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h:
 
 D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator:
-
-D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/rpc.h:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vnnivlintrin.h:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512vpopcntdqintrin.h:
-
-D:/CLion/CLion_body/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
 
 D:/CLion/CLion_Repository/test4/strings.h:
 
@@ -1997,8 +2015,6 @@ D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/nb30.h:
 D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/rpcdcep.h:
 
 D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/shellapi.h:
-
-D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/_bsd_types.h:
 
 D:/CLion/CLion_body/bin/mingw/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h:
 

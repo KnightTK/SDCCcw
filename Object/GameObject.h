@@ -21,18 +21,20 @@ private:
     const string* shortName;
     const string* longDescription;
     const string* key;
+    int index;
 public:
     virtual bool isFood();
 
-    GameObject(const string* _shortName, const string* _longDescription, const string* _key);
+    GameObject(const string* _shortName, const string* _longDescription, const string* _key, int _index);
 
     static std::list<GameObject*> allObjects;
 
-    static GameObject* addObject(const string* _shortName, const string* _longDescription, const string* _key, Room* room);
+    static GameObject* addObject(const string* _shortName, const string* _longDescription, const string* _key, int _index, Room* room);
 
     const string *getShortName() const;
     const string *getLongDescription() const;
     const string *getKey() const;
+    int getIndex() const;
 };
 
 #endif //TEXTADV_GAMEOBJECT_H

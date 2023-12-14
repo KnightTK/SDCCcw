@@ -6,8 +6,8 @@
 #include "FoodObject.h"
 #include "../RoomState/State.h"
 
-FoodObject::FoodObject(const string *_shortName, const string *_longDescription, const string *_key, int _energy) :
-        GameObject(_shortName, _longDescription, _key), energy(_energy) {
+FoodObject::FoodObject(const string *_shortName, const string *_longDescription, const string *_key, int _index, int _energy) :
+        GameObject(_shortName, _longDescription, _key, _index), energy(_energy) {
 }
 
 
@@ -22,8 +22,8 @@ int FoodObject::getEnergy() const {
 }
 
 
-FoodObject* FoodObject::addObject(const std::string *_shortName, const std::string *_longDescription, const std::string *_key, int _energy, Room *room) {
-    auto * newFood = new FoodObject(_shortName, _longDescription, _key, _energy);
+FoodObject* FoodObject::addObject(const std::string *_shortName, const std::string *_longDescription, const std::string *_key, int _index, int _energy, Room *room) {
+    auto * newFood = new FoodObject(_shortName, _longDescription, _key, _index, _energy);
     room->addObject(newFood);
     return newFood;
 }

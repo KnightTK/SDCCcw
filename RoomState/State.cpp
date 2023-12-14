@@ -2,6 +2,8 @@
 
 #include "State.h"
 
+#include <utility>
+
 
 
 /**
@@ -19,7 +21,9 @@ void State::announceLoc() const {
  * Constructor.
  * @param startRoom Pointer to the room to start in.
  */
-State::State(Room *startRoom) : currentRoom(startRoom), strength(100){};
+State::State(Room *startRoom) : currentRoom(startRoom), strength(100){
+    stateVector = {{0,1}, {1,100}};
+};
 
 /**
  * Move to a specified room and print its description.
@@ -27,7 +31,7 @@ State::State(Room *startRoom) : currentRoom(startRoom), strength(100){};
  */
 void State::goTo(Room *target) {
     this->currentRoom = target;
-    this->announceLoc();
+//    this->announceLoc();
 }
 
 /**
@@ -82,4 +86,24 @@ void State::removeObject(GameObject *object) {
 
 void State::setStrength(int _strength) {
     State::strength = _strength;
+}
+
+void State::addState(std::vector<int> subVector) {
+    this->stateVector.push_back(subVector);
+}
+
+std::vector<std::vector<int>> State::getStateVector() {
+    return this->stateVector;
+}
+
+void State::setStateVector(std::vector<std::vector<int>> stateBuffer) {
+    this->stateVector = std::move(stateBuffer);
+}
+
+void State::setCurrentRoom(Room *room) {
+    State::currentRoom = room;
+}
+
+void State::clearInventory() {
+    this->inventory.clear();
 }

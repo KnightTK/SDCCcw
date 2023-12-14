@@ -37,13 +37,14 @@ private:
     Room* west;
     Room* east;
 
+    int index;
 public:
     /**
      * Constructs a new Room.
      * @param _name Name of the room.
      * @param _desc Description of the room.
      */
-    Room(const string *_name, const string *_desc);
+    Room(const string *_name, const string *_desc, int _index);
 
     /**
      * Removes a destroyed room from the global list if it's there.
@@ -67,7 +68,7 @@ public:
      * @param _name Name of the room.
      * @param _desc Description of the room.
      */
-    static Room* addRoom(const string* _name, const string* _desc);
+    static Room* addRoom(const string* _name, const string* _desc, int _index);
     static void addRoom(Room* room);
 
     void addObject(GameObject* object);
@@ -91,6 +92,8 @@ public:
     void removeObject(GameObject* object);
 
     const string *getName() const;
+    int getIndex();
+    void clearObject();
 };
 
 #endif //TEXTADV_ROOM_H
