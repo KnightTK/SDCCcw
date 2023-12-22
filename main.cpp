@@ -104,20 +104,21 @@ std::map<std::string,int> directionMap = {
 bool isFile(string fileName){
     std::ifstream testIsFile(fileName);
     if (testIsFile.is_open()){
-        std::cout << "The file exist." << std::endl;
         testIsFile.close();
         return true;
     } else {
-        std::cout << "nooooooooo" << std::endl;
+        std::cout << "The file is not exist." << std::endl;
         testIsFile.close();
         return false;
     }
 }
 
+
 void saveGame(string fileName){
     std::vector<std::vector<int>> saveVectorBuffer;
+
     //currentRoom:
-    std::vector<int> currentRoomState = {0, currentState->getCurrentRoom()->getIndex(), 0};
+    std::vector<int> currentRoomState = {0, 0, currentState->getCurrentRoom()->getIndex()};
     saveVectorBuffer.push_back(currentRoomState);
 
     //currentStrength:
@@ -128,11 +129,11 @@ void saveGame(string fileName){
     for (auto room : Room::rooms){
         if (!room->getGameObjects().empty()){
             for (auto obj : room->getGameObjects()){
-                std::vector<int> roomObject = {2, room->getIndex(), obj->getIndex()};
+                std::vector<int> roomObject = {2, obj->getIndex(), room->getIndex()};
                 saveVectorBuffer.push_back(roomObject);
             }
         } else if (room->getGameObjects().empty()){
-            std::vector<int> roomObject = {2, room->getIndex(), 0};
+            std::vector<int> roomObject = {2, 0, room->getIndex()};
             saveVectorBuffer.push_back(roomObject);
         }
     }
@@ -152,10 +153,6 @@ void saveGame(string fileName){
 
     std::ofstream saveFile(fileName);
     if (saveFile.is_open()){
-//        saveFile << currentState->getStateVector() << std::endl;
-
-//        std::copy(currentState->getStateVector().begin()->begin(), currentState->getStateVector().begin()->end(), std::ostreambuf_iterator<char>(saveFile));
-
         for (auto row : currentState->getStateVector()){
             for (auto value : row){
                 saveFile << value << " ";
@@ -164,27 +161,26 @@ void saveGame(string fileName){
         }
 
         saveFile.close();
-        std::cout << "OK" << std::endl;
+        std::cout << "Save successfully, looking forward to your next play." << std::endl;
     } else {
-        std::cout << "failed" << std::endl;
+        std::cout << "Save failed" << std::endl;
     }
     exit(0);
 }
 
 void loadGame(string fileName){
     if (isFile(fileName)){
-        std::cout << "Are you sure you want to read the current archive?"<<std::endl;
         std::ifstream loadFile(fileName);
         std::vector<std::vector<int>> stateBuffer;
         string eachLine;
         while (getline(loadFile, eachLine)) {
             std::stringstream ss(eachLine);
             std::vector<int> row;
-            int action, obj1, obj2;
-            ss >> action >> obj1 >> obj2;
+            int action, objIndex, roomIndex;
+            ss >> action >> objIndex >> roomIndex;
             row.push_back(action);
-            row.push_back(obj1);
-            row.push_back(obj2);
+            row.push_back(objIndex);
+            row.push_back(roomIndex);
             stateBuffer.push_back(row);
         }
         currentState->setStateVector(stateBuffer);
@@ -198,46 +194,46 @@ void loadGame(string fileName){
 
         //load all things
         for(auto loadLine : currentState->getStateVector()){
-            int action, obj1, obj2;
+            int action, objIndex, roomIndex;
             action = loadLine[0];
-            obj1 = loadLine[1];
-            obj2 = loadLine[2];
+            objIndex = loadLine[1];
+            roomIndex = loadLine[2];
 
             switch (action) {
                 case 0:
                     for (auto room : Room::rooms){
-                        if (room->getIndex() == obj1){
+                        if (room->getIndex() == roomIndex){
                             currentState->setCurrentRoom(room);
                             break;
                         }
                     }
                     break;
                 case 1:
-                    currentState->setStrength(obj1);
+                    currentState->setStrength(objIndex);
                     break;
                 case 2:
-                    if (obj2 == 0){
+                    if (objIndex == 0){
                         break;
                     } else {
                         for (auto room: Room::rooms) {
-                            if (room->getIndex() == obj1) {
+                            if (room->getIndex() == roomIndex) {
                                 for (auto obj: GameObject::allObjects) {
-                                    if (obj->getIndex() == obj2) {
+                                    if (obj->getIndex() == objIndex) {
                                         room->addObject(obj);
                                         break;
                                     }
                                 }
                             }
-                            break;
+//                            break;
                         }
                     }
                     break;
                 case 3:
-                    if (obj1 == 0){
+                    if (objIndex == 0){
                         break;
                     } else {
                         for (auto obj : GameObject::allObjects){
-                            if (obj->getIndex() == obj1){
+                            if (obj->getIndex() == objIndex){
                                 currentState->addObject(obj);
                                 break;
                             }
@@ -249,8 +245,8 @@ void loadGame(string fileName){
                     exit(0);
             }
         }
-    } else {
-        std::cout << "The save file is not exist."<<std::endl;
+        std::cout << "Load successfully." << std::endl;
+        currentState->getCurrentRoom()->describe();
     }
 }
 
@@ -294,23 +290,22 @@ void gameLoop() {
         }
 
 
-        /* The first word of a command would normally be the verb. The first word is the text before the first
-         * space, or if there is no space, the whole string. */
-        auto endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
-        auto endOfSecond = static_cast<uint8_t>(commandBuffer.find(' '));
-        bool isSecond = false;
-
-        if (endOfVerb != static_cast<uint8_t>(-1)) {
-            endOfSecond = commandBuffer.find(' ', endOfVerb + 1);
-            isSecond = true;
-        }
+//        /* The first word of a command would normally be the verb. The first word is the text before the first
+//         * space, or if there is no space, the whole string. */
+//        auto endOfVerb = static_cast<uint8_t>(commandBuffer.find(' '));
+//        auto endOfSecond = static_cast<uint8_t>(commandBuffer.find(' '));
+//        bool isSecond = false;
+//
+//        if (endOfVerb != static_cast<uint8_t>(-1)) {
+//            endOfSecond = commandBuffer.find(' ', endOfVerb + 1);
+//            isSecond = true;
+//        }
 
 
         for (auto iter: directionMap) {
             if (firstWord == iter.first) {
                 commandOk = true;
                 gotoTarget(iter.second);
-                currentState->announceLoc();
                 if (!secondWord.empty()) {
 
                     bool isExist = false;
@@ -554,12 +549,21 @@ void gameLoop() {
 
         if(firstWord == "save" || firstWord == "load"){
             commandOk = true;
-            std::cout <<"please enter: ";
-            inputCommand(&commandBuffer);
+            if (secondWord.empty()) {
+                std::cout << "please enter the file name: ";
+                inputCommand(&commandBuffer);
+
+                inputCommandStream.str("");
+                inputCommandStream.clear();
+
+                inputCommandStream << commandBuffer;
+                inputCommandStream >> secondWord;
+            }
+
             if (firstWord == "save") {
-                saveGame(commandBuffer + ".txt");
+                saveGame(secondWord + ".txt");
             } else if (firstWord == "load") {
-                loadGame(commandBuffer + ".txt");
+                loadGame(secondWord + ".txt");
                 commandBuffer.clear();
             }
         }

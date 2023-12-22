@@ -22,7 +22,7 @@ void State::announceLoc() const {
  * @param startRoom Pointer to the room to start in.
  */
 State::State(Room *startRoom) : currentRoom(startRoom), strength(100){
-    stateVector = {{0,1}, {1,100}};
+    stateVector = {};
 };
 
 /**
@@ -31,7 +31,7 @@ State::State(Room *startRoom) : currentRoom(startRoom), strength(100){
  */
 void State::goTo(Room *target) {
     this->currentRoom = target;
-//    this->announceLoc();
+    this->announceLoc();
 }
 
 /**
